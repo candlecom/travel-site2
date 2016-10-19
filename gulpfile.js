@@ -20,6 +20,7 @@ gulp.task('watch', function() {
 
   });
 
+
   watch('./app/assets/styles/**/*', function() {
     gulp.start('styles');
   });
