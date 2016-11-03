@@ -809,11 +809,13 @@ a {
   font-weight: 300;
   margin-top: .7em;
   margin-bottom: .8rem;
+  text-align: center;
 }
 
 @media (min-width: 530px) {
 
   .feature-item__title {
+    text-align: left;
     margin-top: 1em;
     font-size: 1.875rem;
   }
