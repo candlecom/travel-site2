@@ -569,7 +569,7 @@ a {
 .wrapper {
   overflow: hidden;
   padding-left: 18px;
-  padding-right: 17px;
+  padding-right: 18px;
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
@@ -577,6 +577,19 @@ a {
 
 .wrapper--medium {
   max-width: 976px;
+}
+
+.wrapper--no-padding-until-medium {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 800px) {
+
+  .wrapper--no-padding-until-medium {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 .wrapper .wrapper {
@@ -606,12 +619,27 @@ a {
   }
 }
 
+.page-section--no-b-until-medium {
+  padding-bottom: 0;
+}
+
+@media (min-width: 800px) {
+
+  .page-section--no-b-until-medium {
+    padding-bottom: 4.5rem;
+  }
+}
+
 .page-section--blue {
   background-color: #2f5572;
   color: #FFF;
 }
 
-.page-section--testimonials {
+.page-section--testimonial {
+  background-color: #e0e6ef;
+}
+
+.page-section--testimonial mixin atMedium {
   background: url('/assets/images/testimonials-bg2.jpg') top center no-repeat;
   background-size: cover;
 }
@@ -677,12 +705,20 @@ a {
   display: table;
 }
 
+.row--t-padding {
+  padding-top: 80px;
+}
+
 .row--gutters {
   margin-right: -65px;
 }
 
 .row--gutters-large {
   margin-right: -100px;
+}
+
+.row--gutters-small {
+  margin-right: -45px;
 }
 
 .row--gutters > div {
@@ -693,13 +729,17 @@ a {
   padding-right: 100px;
 }
 
+.row--gutters-small > div {
+  padding-right: 45px;
+}
+
 .row__b-margin-until-medium {
   margin-bottom: 1rem;
 }
 
 @media (min-width: 800px) {
 
-  .row____b-margin-until-medium {
+  .row__b-margin-until-medium {
     margin-bottom: 0;
   }
 
@@ -717,10 +757,6 @@ a {
     width: 50%;
   }
 
-  .row__medium-8--smaller {
-    width: 63%;
-  }
-
   .row__medium-8 {
     float: left;
     width: 66.66%;
@@ -729,6 +765,24 @@ a {
   .row__medium-8--smaller {
     width: 63%;
   }
+}
+
+/* Begin Equal Height Rules */
+
+@media (min-width: 800px) {
+
+  .row--equal-height-at-medium {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.row--equal-height-at-medium > div {
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .generic-content-container p {
@@ -832,10 +886,19 @@ a {
 }
 
 .testimonial {
-  background-color: rgba(255, 255, 255, .7);
-  padding: 0 1.8125rem 1px 1.8125rem;
+  background-color: rgba(255, 255, 255, .8);
+  padding: 0 18px 1px 18px;
+  margin-bottom: 98px;
   border-radius: 30px;
 
+}
+
+@media (min-width: 800px) {
+
+  .testimonial {
+    margin-bottom: 0;
+    padding: 0 1.8125rem 1px 1.8125rem;
+  }
 }
 
 .testimonial__photo {
@@ -863,4 +926,8 @@ a {
   font-weight: 400;
   font-size: .9375rem;
   margin: .25rem 0 1rem 0;
+}
+
+.testimonial--last {
+  margin-bottom: 0;
 }

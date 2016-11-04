@@ -1,18 +1,32 @@
 .page-section {
   padding: 1.2rem 0;
 
+
   @mixin atMedium {
     padding: 4.5rem 0;
   }
 
+&--no-b-until-medium {
+  padding-bottom: 0;
+
+  @mixin atMedium {
+    padding-bottom: 4.5rem;
+  }
+}
 
   &--blue {
     background-color: $mainBlue;
     color: #FFF;
   }
 
-  &--testimonials {
-    background: url('/assets/images/testimonials-bg2.jpg') top center no-repeat;
-    background-size: cover;
+  &--testimonial {
+    background-color: #e0e6ef;
+
+    mixin atMedium {
+      background: url('/assets/images/testimonials-bg2.jpg') top center no-repeat;
+      background-size: cover;
+
+    }
+
   }
 }
