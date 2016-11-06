@@ -4,10 +4,13 @@
   margin-bottom: 98px;
   border-radius: 30px;
 
-  @mixin atMedium {
+  @mixin atLarge {
     margin-bottom: 0;
     padding: 0 1.8125rem 1px 1.8125rem;
+  }
 
+  &--last {
+      margin-bottom: 0;
   }
 
   &__photo {
@@ -18,7 +21,7 @@
     margin: 0 auto -80px auto;
     position: relative;
     top: -80px;
-    border: 6px solid rgba(255, 255, 255, .7);
+    border: 6px solid rgba(255, 255, 255, .8);
 
   }
 
@@ -38,8 +41,6 @@
   margin: .25rem 0 1rem 0;
 }
 
-&--last {
-  margin-bottom: 0;
 }
 
 }
