@@ -19,6 +19,7 @@
     padding-right: 18px;
   }
   }
+
   &--no-padding-until-large {
     padding-left: 0;
     padding-right: 0;
@@ -36,7 +37,7 @@
 
   &--b-margin {
     margin-bottom: 1rem;
-  }
+  
 
   @mixin atSmall {
     margin-bottom: 3.875rem;
