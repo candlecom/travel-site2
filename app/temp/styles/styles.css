@@ -462,7 +462,7 @@ template {
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #334;
+  color: #333;
 }
 
 img {
@@ -479,8 +479,9 @@ a {
 }
 
 .large-hero {
-  border-bottom:  10px solid #2f5572;
+  border-bottom: 10px solid #2f5572;
   position: relative;
+
 }
 
 .large-hero__image {
@@ -526,10 +527,10 @@ a {
 }
 
 .large-hero__description {
-  color: #fff;
+  color: #FFF;
   font-size: 1.1rem;
-  font-weight: 300;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, .10);
+  font-weight: 100;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
   max-width: 30rem;
   margin-left: auto;
   margin-right: auto;
@@ -573,6 +574,7 @@ a {
   max-width: 1236px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .wrapper--medium {
@@ -673,10 +675,9 @@ a {
 }
 
 .headline {
-  font-weight: 300;
   font-size: 1.9rem;
+  font-weight: 300;
   color: #2f5572;
-
 }
 
 @media (min-width: 530px) {
@@ -715,12 +716,16 @@ a {
   font-weight: 100;
 }
 
+.headline strong {
+  font-weight: 400;
+}
+
 .headline--b-margin-small {
   margin-bottom: .5em;
 }
 
-.headline--b-margin-small {
-  margin-bottom: .5em
+.headline--b-margin-large {
+  margin-bottom: 1.6em;
 }
 
 .headline--no-t-margin {
@@ -880,6 +885,7 @@ a {
   font-size: 2.55rem;
   font-weight: 300;
   text-align: center;
+
 }
 
 @media (min-width: 530px) {
@@ -919,7 +925,6 @@ a {
 .feature-item {
   position: relative;
   padding-bottom: 2.5rem;
-
 }
 
 @media (min-width: 530px) {
@@ -931,7 +936,7 @@ a {
 
 .feature-item__icon {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 530px) {
@@ -963,8 +968,6 @@ a {
   background-color: rgba(255, 255, 255, .8);
   padding: 0 18px 1px 18px;
   margin-bottom: 98px;
-  border-radius: 30px;
-
 }
 
 @media (min-width: 1010px) {
@@ -1006,79 +1009,81 @@ a {
   margin: .25rem 0 1rem 0;
 }
 
-/* Do not edit modules/_sprite directly as it is generated automatically by Gulp. Instead edit gulp/templates/sprite  */
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
 
 .icon {
-    background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
-  }
+      background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
+    }
 
 .icon--clear-view-escapes {
     width: 142.4px;
-    Height: 59.53px;
+    height: 59.53px;
     background-position: 0 0;
   }
 
 .icon--comment {
-    width: 64px;    Height: 64px;
+    width: 64px;
+    height: 64px;
     background-position: 99.70443349753694% 0;
   }
 
 .icon--facebook {
     width: 21.23px;
-    Height: 42.01px;
+    height: 42.01px;
     background-position: 26.040607071652357% 45.795830448496034%;
   }
 
 .icon--fire {
     width: 56px;
-    Height: 64px;
+    height: 64px;
     background-position: 0 99.56481481481481%;
   }
 
 .icon--globe {
     width: 64px;
-    Height: 64px;
+    height: 64px;
     background-position: 27.586206896551722% 99.56481481481481%;
   }
 
 .icon--instagram {
     width: 42.01px;
-    Height: 42.01px;
+    height: 42.01px;
     background-position: 63.2917018534157% 49.234556504346486%;
   }
 
 .icon--mail {
     width: 64px;
-    Height: 48px;
+    height: 48px;
     background-position: 0 48.00806451612903%;
   }
 
 .icon--rain {
     width: 64px;
-    Height: 64px;
+    height: 64px;
     background-position: 99.70443349753694% 59.25925925925926%;
   }
 
 .icon--star {
     width: 64px;
-    Height: 64px;
+    height: 64px;
     background-position: 59.11330049261084% 99.56481481481481%;
   }
 
 .icon--twitter {
     width: 51.78px;
-    Height: 42.06px;
+    height: 42.06px;
     background-position: 94.04330452560171% 98.50700323226104%;
   }
 
 .icon--wifi {
     width: 60px;
-    Height: 64px;
+    height: 64px;
     background-position: 68.79227053140097% 0;
   }
 
 .icon--youtube {
     width: 34.75px;
-    Height: 42px;
+    height: 42px;
     background-position: 36.69752421959096% 45.792307692307695%;
   }
