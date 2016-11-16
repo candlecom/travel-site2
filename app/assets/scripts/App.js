@@ -1,10 +1,12 @@
-function person(name, favColor) {
-  console.log("Hello, my name is " + name + " and my favourite color is " + favColor + ".");
-}
+var Person = require('./modules/Person');
 
-var john = {
-  name: "John Doe",
-  favouriteColor: "blue"
-}
-person(john.name, john.favoriteColor);
-person("Jane Smith", "green");
+
+console.log(Person);
+
+/*
+var john = new Person("John Doe", "blue");
+john.greet();
+
+var jane = new Person("Jane Smith", "green");
+jane.greet();
+*/
