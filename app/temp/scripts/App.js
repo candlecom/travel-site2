@@ -52,7 +52,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var mobileMenu = new _MobileMenu2.default();
+	var mobileMenu = new _MobileMenu2.default(); /*import MobileMenu from './modules/MobileMenu';
+	                                             
+	                                             var mobileMenu = new MobileMenu();
+	                                             */
 
 /***/ },
 /* 1 */
@@ -74,23 +77,45 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+	/*
+	class MobileMenu {
+	  constructor() {
+	    this.menuIcon = $(".site-header__menu-icon");
+	    this.events();
+	  }
+
+
+	events() {
+	  this.menuIcon.click(this.toggleTheMenu);
+	}
+
+	toggleTheMenu() {
+	  console.log("Hooray - the icon was clicked.");
+	  }
+	}
+
+	export default MobileMenu;
+	*/
+
 	var MobileMenu = function () {
 	  function MobileMenu() {
 	    _classCallCheck(this, MobileMenu);
 
-	    this.menuIcon = (0, _jquery2.default)(".site-header_menu-icon");
+	    this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
+	    this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
 	    this.events();
 	  }
 
 	  _createClass(MobileMenu, [{
 	    key: "events",
 	    value: function events() {
-	      this.menuIcon.click(this.toggleTheMenu);
+	      this.menuIcon.click(this.toggleTheMenu.bind(this));
 	    }
 	  }, {
 	    key: "toggleTheMenu",
 	    value: function toggleTheMenu() {
-	      console.log("Hooray - the icon was clicked.");
+
+	      this.menuContent.toggleClass("site-header__menu-content--is-visible");
 	    }
 	  }]);
 
