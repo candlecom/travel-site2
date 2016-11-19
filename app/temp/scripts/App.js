@@ -52,14 +52,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-<<<<<<< HEAD
-	var mobileMenu = new _MobileMenu2.default();
-=======
 	var mobileMenu = new _MobileMenu2.default(); /*import MobileMenu from './modules/MobileMenu';
 	                                             
 	                                             var mobileMenu = new MobileMenu();
 	                                             */
->>>>>>> javascript
 
 /***/ },
 /* 1 */
@@ -85,36 +81,24 @@
 	  function MobileMenu() {
 	    _classCallCheck(this, MobileMenu);
 
-<<<<<<< HEAD
-	    this.menuIcon = (0, _jquery2.default)(".site-header_menu-icon");
-=======
 	    this.siteHeader = (0, _jquery2.default)(".site-header");
 	    this.menuIcon = (0, _jquery2.default)(".site-header__menu-icon");
 	    this.menuContent = (0, _jquery2.default)(".site-header__menu-content");
->>>>>>> javascript
 	    this.events();
 	  }
 
 	  _createClass(MobileMenu, [{
 	    key: "events",
 	    value: function events() {
-<<<<<<< HEAD
-	      this.menuIcon.click(this.toggleTheMenu);
-=======
 	      this.menuIcon.click(this.toggleTheMenu.bind(this));
->>>>>>> javascript
 	    }
 	  }, {
 	    key: "toggleTheMenu",
 	    value: function toggleTheMenu() {
-<<<<<<< HEAD
-	      console.log("Hooray - the icon was clicked.");
-=======
 
 	      this.menuContent.toggleClass("site-header__menu-content--is-visible");
 	      this.siteHeader.toggleClass("site-header--is-expanded");
 	      this.menuIcon.toggleClass("site-header__menu-icon--close-x");
->>>>>>> javascript
 	    }
 	  }]);
 
