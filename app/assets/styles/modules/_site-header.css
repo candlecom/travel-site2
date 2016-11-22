@@ -9,9 +9,9 @@
     background-color: rgba($mainBlue, .55);
   }
 
-@mixin atMedium {
-    background-color: rgba($mainBlue, .30);
-}
+  @mixin atMedium {
+    background-color: rgba($mainBlue, .3);
+  }
 
   &__btn-container {
     @mixin atMedium {
@@ -30,7 +30,7 @@
 
     @mixin atMedium {
       left: auto;
-      transform: translateX(0%);
+      transform: translateX(0);
     }
   }
 
@@ -67,8 +67,8 @@
       background-color: #FFF;
       transition: all .3s ease-out;
       transform-origin: 0 50%;
-
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -79,7 +79,6 @@
       background-color: #FFF;
       transform-origin: 0 100%;
       transition: transform .3s ease-out;
-
     }
 
     @mixin atMedium {
@@ -90,20 +89,21 @@
   &__menu-icon--close-x {
     &::before {
       transform: rotate(45deg) scaleX(1.25);
-    }
-    &::after {
-        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
-    }
 
+    }
     .site-header__menu-icon__middle {
       opacity: 0;
       transform: scaleX(0);
     }
+
+    &::after {
+        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+    }
   }
 
   &__menu-content {
-    transform: scale(1.2);
     opacity: 0;
+    transform: scale(1.2);
     transition: all .3s ease-out;
     position: relative;
     z-index: -10;
@@ -111,10 +111,10 @@
     text-align: center;
 
     @mixin atMedium {
-      display: block;
+      opacity: 1;
+      z-index: 1;
       padding-top: 0;
       transform: scale(1);
-
     }
 
     &--is-visible {
@@ -123,5 +123,4 @@
       transform: scale(1);
     }
   }
-
 }
