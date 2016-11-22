@@ -1,8 +1,6 @@
-/*import MobileMenu from './modules/MobileMenu';
-
-var mobileMenu = new MobileMenu();
-*/
-
 import MobileMenu from './modules/MobileMenu';
+import RevealOnScroll from './modules/RevealOnScroll';
 
 var mobileMenu = new MobileMenu();
+
+var revealOnScroll = new RevealOnScroll();
