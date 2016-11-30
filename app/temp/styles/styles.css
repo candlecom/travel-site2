@@ -1138,22 +1138,18 @@ Instead edit gulp/templates/sprite */
 }
 
 .site-header--is-expanded {
-  background-color: rgba(#2f5572, .55);
+  background-color: rgba(47,85,114, .55);
 }
 
 @media (min-width: 800px) {
 
   .site-header {
-<<<<<<< HEAD
     position: fixed;
     background-color: rgba(47,85,114, .3);
   }
 
   .site-header--dark {
     background-color: rgba(23, 51, 72, .85);
-=======
-    background-color: rgba(#2f5572, .30);
->>>>>>> javascript
   }
 }
 
@@ -1170,6 +1166,10 @@ Instead edit gulp/templates/sprite */
   left: 50%;
   -webkit-transform: translateX(-50%) scale(.8);
           transform: translateX(-50%) scale(.8);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
   background-color: #2f5572;
@@ -1182,6 +1182,11 @@ Instead edit gulp/templates/sprite */
     left: auto;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+
+  .site-header--dark .site-header__logo {
+    -webkit-transform: scale(.57);
+            transform: scale(.57);
   }
 }
 
@@ -1358,7 +1363,7 @@ Instead edit gulp/templates/sprite */
   display: block;
   padding: 5px 8px;
   font-size: .8rem;
-  background-color: rgba(#2f5572, 0.5);
+  background-color: rgba(47,85,114, 0.5);
 }
 
 @media (min-width: 800px) {
@@ -1391,7 +1396,7 @@ Instead edit gulp/templates/sprite */
 .modal {
   position: fixed;
   z-index: 5;
-  background-color: rgba(255, 255,255, .94);
+  background-color: rgba(255, 255, 255, .94);
   top: 0;
   bottom: 0;
   left: 0;
@@ -1429,7 +1434,7 @@ Instead edit gulp/templates/sprite */
 .modal__close {
   position: absolute;
   top: 15px;
-  right: 15%;
+  right: 15px;
   font-size: 2rem;
   -webkit-transform: scaleX(1.2);
           transform: scaleX(1.2);

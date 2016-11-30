@@ -1,7 +1,7 @@
 .social-icons {
   text-align: center;
 
-  &__icon {
+ &__icon {
     background-color: $mainOrange;
     display: inline-block;
     margin: 0 5px 5px 5px;

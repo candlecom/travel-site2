@@ -11640,10 +11640,10 @@
 	  _createClass(Modal, [{
 	    key: "events",
 	    value: function events() {
-	      //clicking the open modal button
+	      // clicking the open modal button
 	      this.openModalButton.click(this.openModal.bind(this));
 
-	      //clicking the x close modal button
+	      // clicking the x close modal button
 	      this.closeModalButton.click(this.closeModal.bind(this));
 
 	      // pushes any key
