@@ -39,8 +39,13 @@
       transform: translateX(0);
 
       .site-header--dark & {
+<<<<<<< HEAD
         transform: scale(.56);
       }
+=======
+		transform: scale(.57);
+	  }
+>>>>>>> 9a7d4a75381ae891bcec0262128109770ca1c8df
     }
   }
 

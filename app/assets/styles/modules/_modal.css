@@ -23,6 +23,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
+<<<<<<< HEAD
 
   &__description {
     text-align: center;
@@ -46,3 +47,34 @@
     }
   }
 }
+=======
+
+
+
+&__description {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.65;
+
+}
+
+
+
+&__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  transform: scaleX(1.2);
+  transform-origin: 100% 0;
+  color: $mainBlue;
+  cursor: pointer;
+
+  &:hover {
+    color: $mainOrange;
+  }
+
+}
+}
+>>>>>>> 9a7d4a75381ae891bcec0262128109770ca1c8df
